@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="CA0E642A-7BB8-40de-9AFC-46BCF9F05777" name="Server1" poe="0" model="Server" settings="-domain 0 -eth 54-89-98-93-77-96 -ipaddr 10.10.10.1 -ipmask 255.255.255.0 -gateway 0.0.0.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist _www.huawei.com_10.10.10.1" system_mac="54-89-98-93-77-96" com_port="0" bootmode="0" cx="779.000000" cy="262.000000" edit_left="806" edit_top="316">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="DAEE232B-9423-4236-AB6B-E2E735C2E721" name="Client1" poe="0" model="Client" settings="-domain 0 -eth 54-89-98-B2-5A-70 -ipaddr 10.10.10.123 -ipmask 255.255.255.0 -gateway 0.0.0.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 10.10.10.1 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-B2-5A-70" com_port="0" bootmode="0" cx="288.000000" cy="262.000000" edit_left="315" edit_top="316">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="DAEE232B-9423-4236-AB6B-E2E735C2E721" destDeviceID="CA0E642A-7BB8-40de-9AFC-46BCF9F05777">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="358.183777" srcBoundRect_Y="289.000000" srcOffset_X="-3.000000" srcOffset_Y="7.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="762.816223" tarBoundRect_Y="289.000000" tarOffset_X="-57.000000" tarOffset_Y="7.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="80" top="88" right="462" bottom="152" content="2018-05-01&#x0D;&#x0A;C/S组网实验&#x0D;&#x0A;注意：FTP中服务器文件夹路径要全英文，否则会出错。&#x0D;&#x0A;http:10.10.10.1--&gt;http://www.huawei.com" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="246" top="362" right="371" bottom="394" content="IP:10.10.10.123&#x0D;&#x0A;DNS:10.10.10.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="756" top="358" right="858" bottom="375" content="IP:10.10.10.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

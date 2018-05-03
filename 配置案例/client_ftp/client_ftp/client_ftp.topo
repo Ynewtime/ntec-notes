@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.300">
+    <devices>
+        <dev id="D343AE0C-1D18-48b9-A49F-C921CA50A74C" name="CLIENT1" model="Client" settings="-domain 0 -eth 54-89-98-CF-24-30 -ipaddr 192.168.1.1 -ipmask 255.255.255.0 -gateway 0.0.0.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" com_port="0" bootmode="0" cx="92.000000" cy="229.000000" edit_left="119" edit_top="283">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="0035F2D0-8941-49c5-9829-E3EA9B20AF6C" name="AR1" model="AR2240" settings="" com_port="2000" bootmode="0" cx="320.000000" cy="158.000000" edit_left="347" edit_top="212">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="D343AE0C-1D18-48b9-A49F-C921CA50A74C" destDeviceID="0035F2D0-8941-49c5-9829-E3EA9B20AF6C">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="160.230896" srcBoundRect_Y="243.160553" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="305.769104" tarBoundRect_Y="197.839447" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="247" top="120" right="372" bottom="152" content="ÓÃ»§Ãû:huawei&#x0D;&#x0A;ÃÜÂë£ºhuawei@123" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="45417BDF-3556-4791-8E6B-62F6E3107618" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-87-58-7E" com_port="2000" bootmode="0" cx="372.000000" cy="66.000000" edit_left="402" edit_top="50">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="FA1B95EF-0399-476d-B491-D3E1CFE4677F" name="Client2" poe="0" model="PC" settings=" -simpc_hostname Client2  -simpc_ip 192.168.1.3  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-43-4F-83  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-43-4F-83" com_port="0" bootmode="0" cx="518.000000" cy="242.000000" edit_left="545" edit_top="296">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="E443ED3B-52A3-4fda-B0DA-57C1AB22A8F1" name="Client1" poe="0" model="PC" settings=" -simpc_hostname Client1  -simpc_ip 192.168.1.2  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-FC-5F-BC  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-FC-5F-BC" com_port="0" bootmode="0" cx="216.000000" cy="242.000000" edit_left="243" edit_top="296">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="E443ED3B-52A3-4fda-B0DA-57C1AB22A8F1" destDeviceID="45417BDF-3556-4791-8E6B-62F6E3107618">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="271.644104" srcBoundRect_Y="236.683563" srcOffset_X="-75.000000" srcOffset_Y="-17.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="370.355896" tarBoundRect_Y="125.316437" tarOffset_X="-54.000000" tarOffset_Y="-2.000000" />
+        </line>
+        <line srcDeviceID="FA1B95EF-0399-476d-B491-D3E1CFE4677F" destDeviceID="45417BDF-3556-4791-8E6B-62F6E3107618">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="517.428772" srcBoundRect_Y="235.763474" srcOffset_X="18.000000" srcOffset_Y="-12.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="426.571198" tarBoundRect_Y="126.236519" tarOffset_X="18.000000" tarOffset_Y="-1.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="573" top="42" right="720" bottom="90" content="2018-05-01&#x0D;&#x0A;新建拓扑和数据实验&#x0D;&#x0A;PING测试通过" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="144" top="325" right="276" bottom="357" content="IP:192.168.1.1&#x0D;&#x0A;GW:255.255.255.0 " fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="515" top="321" right="640" bottom="353" content="IP:192.168.1.3&#x0D;&#x0A;GW:255.255.255.0 " fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

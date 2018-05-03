@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="E13CC878-9924-4493-90FC-7D700390D523" name="AC1" poe="0" model="AC6005" settings="" system_mac="00-E0-FC-0D-19-7B" com_port="2000" bootmode="0" cx="581.000000" cy="148.000000" edit_left="608" edit_top="202">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="8" />
+            </slot>
+        </dev>
+        <dev id="A9EAE176-1C08-47ef-A7F5-6BE0B899557E" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-E1-20-79" com_port="2001" bootmode="0" cx="367.000000" cy="146.000000" edit_left="394" edit_top="200">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="4B9C20E0-7702-4346-A217-E79438F36EC0" name="STA2" poe="0" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-D7-51-71  -simsta_check 0 " system_mac="54-89-98-D7-51-71" com_port="0" bootmode="0" cx="451.000000" cy="395.000000" edit_left="478" edit_top="449">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+        <dev id="C96176C5-0E2D-4577-96CB-3B408F70DA61" name="STA1" poe="0" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-9E-7D-8F  -simsta_check 0 " system_mac="54-89-98-9E-7D-8F" com_port="0" bootmode="0" cx="290.000000" cy="395.000000" edit_left="317" edit_top="449">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+        <dev id="D2C587A5-47C3-41dc-BE25-34259C2A2B4B" name="AP2" poe="0" model="AP6050" settings=" -apMac 00-E0-FC-72-14-40 -apSN 210235448310D2176025" system_mac="00-E0-FC-72-14-40" com_port="2002" bootmode="0" cx="366.000000" cy="292.000000" edit_left="393" edit_top="346">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="A9EAE176-1C08-47ef-A7F5-6BE0B899557E" destDeviceID="E13CC878-9924-4493-90FC-7D700390D523">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="437.181885" srcBoundRect_Y="173.403564" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="564.818115" tarBoundRect_Y="174.596436" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="A9EAE176-1C08-47ef-A7F5-6BE0B899557E" destDeviceID="D2C587A5-47C3-41dc-BE25-34259C2A2B4B">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="393.704224" srcBoundRect_Y="216.182755" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="393.295776" tarBoundRect_Y="275.817261" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="107" top="61" right="307" bottom="156" content="核心交换机&#x0D;&#x0A;vlan 100&#x0D;&#x0A;  192.168.100.254 24&#x0D;&#x0A;vlan 1&#x0D;&#x0A;  192.168.1.254 24&#x0D;&#x0A;DHCP SERVER for vlan 1 100" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="645" top="88" right="755" bottom="136" content="AC vlan 1&#x0D;&#x0A;192.168.1.1 24&#x0D;&#x0A;gw 1.254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="196" top="283" right="321" bottom="331" content="AP vlan 100&#x0D;&#x0A;192.168.100.0 24 &#x0D;&#x0A;gw 100.254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="923" top="55" right="1018" bottom="87" content="2018-05-01&#x0D;&#x0A;Wlan安全认证" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

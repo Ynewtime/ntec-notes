@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.300">
+    <devices>
+        <dev id="5C981A3A-4200-4875-B26F-FC68D181C06B" name="CLIENT" model="Client" settings="-domain 0 -eth 54-89-98-CF-75-2D -ipaddr 1.1.1.1 -ipmask 255.255.255.0 -gateway 0.0.0.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" com_port="0" bootmode="0" cx="173.000000" cy="185.000000" edit_left="200" edit_top="239">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="D21BB57D-681C-4c0e-B9EF-21CDFA3BE6BD" name="SERVER" model="Server" settings="-domain 0 -eth 54-89-98-CF-61-28 -ipaddr 1.1.1.2 -ipmask 255.255.255.0 -gateway 0.0.0.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" com_port="0" bootmode="0" cx="372.000000" cy="157.000000" edit_left="399" edit_top="211">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="5C981A3A-4200-4875-B26F-FC68D181C06B" destDeviceID="D21BB57D-681C-4c0e-B9EF-21CDFA3BE6BD">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="242.762543" srcBoundRect_Y="205.983154" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="356.237457" tarBoundRect_Y="190.016846" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips />
+</topo>

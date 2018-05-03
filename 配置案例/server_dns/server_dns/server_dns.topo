@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.300">
+    <devices>
+        <dev id="C827640B-0AC2-4a70-97FC-1FCC6DD54655" name="CLIENT1" model="Server" settings="-domain 0 -eth 54-89-98-CF-65-46 -ipaddr 3.3.3.2 -ipmask 255.255.255.0 -gateway 3.3.3.1 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist _www.huawei.com_2.2.2.2" com_port="0" bootmode="0" cx="449.000000" cy="242.000000" edit_left="476" edit_top="296">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="5370D9D2-8485-4cd1-B449-3670F74884C1" name="CLIENT2" model="PC" settings=" -simpc_ip 4.4.4.2  -simpc_mask 255.255.255.0  -simpc_gateway 4.4.4.1  -simpc_mac 54-89-98-CF-7B-59  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 3.3.3.2  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0 " com_port="0" bootmode="0" cx="89.000000" cy="378.000000" edit_left="116" edit_top="432">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="A73126F0-690C-4d45-ABF7-C8B6F07F924E" name="AR1" model="AR2240" settings="" com_port="2000" bootmode="0" cx="88.000000" cy="255.000000" edit_left="115" edit_top="309">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="A2C8FDC3-4382-4684-81E6-6BD9A3B2D77C" name="AR2" model="AR2240" settings="" com_port="2001" bootmode="0" cx="276.000000" cy="250.000000" edit_left="303" edit_top="304">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="D25A31D7-A5DE-43e4-81D7-12F2CB48E415" name="AR3" model="AR2240" settings="" com_port="2002" bootmode="0" cx="282.000000" cy="409.000000" edit_left="309" edit_top="463">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="A73126F0-690C-4d45-ABF7-C8B6F07F924E" destDeviceID="A2C8FDC3-4382-4684-81E6-6BD9A3B2D77C">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="158.168503" srcBoundRect_Y="280.851898" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="259.831512" tarBoundRect_Y="278.148102" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="A2C8FDC3-4382-4684-81E6-6BD9A3B2D77C" destDeviceID="D25A31D7-A5DE-43e4-81D7-12F2CB48E415">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="304.628418" srcBoundRect_Y="320.153046" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="307.371582" tarBoundRect_Y="392.846954" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="A2C8FDC3-4382-4684-81E6-6BD9A3B2D77C" destDeviceID="C827640B-0AC2-4a70-97FC-1FCC6DD54655">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="346.137665" srcBoundRect_Y="275.005188" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="432.862335" tarBoundRect_Y="270.994812" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="A73126F0-690C-4d45-ABF7-C8B6F07F924E" destDeviceID="5370D9D2-8485-4cd1-B449-3670F74884C1">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="115.351074" srcBoundRect_Y="325.182343" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="115.648926" tarBoundRect_Y="361.817657" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="113" top="241" right="170" bottom="258" content="1.1.1.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="224" top="247" right="281" bottom="264" content="1.1.1.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="328" top="307" right="385" bottom="324" content="2.2.2.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="340" top="379" right="397" bottom="396" content="2.2.2.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="337" top="252" right="394" bottom="269" content="3.3.3.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="415" top="231" right="472" bottom="248" content="3.3.3.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="323" top="144" right="493" bottom="161" content="运行OSPF，保证路由通畅" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="518" top="277" right="749" bottom="294" content="www.huawei.com IP地址为2.2.2.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="7" top="196" right="366" bottom="228" content="如果要在AR上进行ping www.huawei.com，&#x0D;&#x0A;需要开启dns resolve，还要设置dns server的地址。" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="28" top="446" right="183" bottom="478" content="在模拟PC上的话，&#x0D;&#x0A;只要设置DNS 地址即可" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

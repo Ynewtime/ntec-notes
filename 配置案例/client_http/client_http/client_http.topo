@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.300">
+    <devices>
+        <dev id="0F68D762-D097-4b27-B67D-10A0236EE92C" name="AR1" model="AR2240" settings="" com_port="2000" bootmode="0" cx="270.000000" cy="127.000000" edit_left="297" edit_top="181">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+            </slot>
+            <slot isMainBoard="0" id="1" type="4" />
+        </dev>
+        <dev id="8981B074-7288-41eb-8F2C-7F4B135E6BB8" name="CLIENT2" model="Server" settings="-domain 0 -eth 54-89-98-CF-01-17 -ipaddr 192.168.20.2 -ipmask 255.255.255.0 -gateway 192.168.20.1 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" com_port="0" bootmode="0" cx="475.000000" cy="121.000000" edit_left="502" edit_top="175">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="F5CC34B1-DA9F-4af8-9DD8-C37E8750B512" name="CLIENT1" model="Client" settings="-domain 0 -eth 54-89-98-CF-FB-16 -ipaddr 202.169.10.2 -ipmask 255.255.255.0 -gateway 0.0.0.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" com_port="0" bootmode="0" cx="86.000000" cy="179.000000" edit_left="113" edit_top="233">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="F5CC34B1-DA9F-4af8-9DD8-C37E8750B512" destDeviceID="0F68D762-D097-4b27-B67D-10A0236EE92C">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="154.556137" srcBoundRect_Y="194.255875" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="255.443863" tarBoundRect_Y="165.744125" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="0F68D762-D097-4b27-B67D-10A0236EE92C" destDeviceID="8981B074-7288-41eb-8F2C-7F4B135E6BB8">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="0" srcBoundRect_X="340.165283" srcBoundRect_Y="152.736633" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="458.834717" tarBoundRect_Y="149.263367" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="449" top="102" right="574" bottom="119" content="提供了http的功能" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="81" top="157" right="176" bottom="174" content="httpclient端" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
