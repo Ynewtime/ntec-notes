@@ -2,7 +2,7 @@
 layout: post
 share: true
 title: VLAN路由 - 工作原理
-description: VLAN的缺点/VLAN间通信/
+description: VLAN的缺点/VLAN间通信
 date: 2018-05-03
 ---
 

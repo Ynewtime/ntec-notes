@@ -1,8 +1,8 @@
 ---
 layout: post
 share: true
-title: 华为交换机/路由器 链路聚合
-description:  基本知识/
+title: 华为交换机/路由器-链路聚合配置方案
+description:  基本知识
 date: 2018-05-05
 ---
 
